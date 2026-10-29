@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contacto | Meits: cuéntanos de tu negocio</title>
+<meta name="description" content="Escríbenos por WhatsApp o por correo y te respondemos con ideas concretas para hacer crecer tu negocio con IA, redes y tarjetas digitales.">
+<link rel="canonical" href="https://meits.com.mx/contacto/">
+<link rel="alternate" hreflang="es-MX" href="https://meits.com.mx/contacto/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#FFFFFF">
+<meta property="og:type" content="website"><meta property="og:locale" content="es_MX"><meta property="og:site_name" content="Meits">
+<meta property="og:title" content="Contacto | Meits: cuéntanos de tu negocio"><meta property="og:description" content="Escríbenos por WhatsApp o por correo y te respondemos con ideas concretas para hacer crecer tu negocio con IA, redes y tarjetas digitales."><meta property="og:url" content="https://meits.com.mx/contacto/">
+<meta property="og:image" content="https://meits.com.mx/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Contacto | Meits: cuéntanos de tu negocio"><meta name="twitter:description" content="Escríbenos por WhatsApp o por correo y te respondemos con ideas concretas para hacer crecer tu negocio con IA, redes y tarjetas digitales."><meta name="twitter:image" content="https://meits.com.mx/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/s.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ContactPage", "name": "Contacto | Meits: cuéntanos de tu negocio", "url": "https://meits.com.mx/contacto/", "description": "Escríbenos por WhatsApp o por correo y te respondemos con ideas concretas para hacer crecer tu negocio con IA, redes y tarjetas digitales."}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://meits.com.mx/"}, {"@type": "ListItem", "position": 2, "name": "Contacto", "item": "https://meits.com.mx/contacto/"}]}]}</script>
+</head>
+<body>
+<div class="wrap"><header><a class="logo" href="/" aria-label="Meits, inicio"><img src="/logo.svg" width="150" height="46" alt="Meits"></a><nav><a class="h" href="/">Inicio</a><a class="h" href="/#servicios">Servicios</a><a class="btn" href="/contacto/">Hablemos</a></nav></header></div>
+<main>
+<div class="hero"><div class="wrap"><p class="crumbs"><a href="/">Inicio</a> › Contacto</p><h1>Hablemos de tu negocio</h1><p class="lead">Cuéntanos qué quieres lograr y te respondemos con ideas concretas. Escríbenos por WhatsApp o por correo, como te quede mejor.</p></div></div>
+<section><div class="wrap"><div class="cc"><a class="w" href="https://wa.me/523350238434?text=Hola%20Meits%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener"><b>WhatsApp</b><span>+52 33 5023 8434 · La forma más rápida</span></a><a class="m" href="mailto:hola@meits.com.mx"><b>Correo</b><span>hola@meits.com.mx</span></a></div>
+<h2>O déjanos tu mensaje</h2>
+<form id="f" novalidate><label>Tu nombre<input id="n" autocomplete="name"></label><label>Empresa (opcional)<input id="e" autocomplete="organization"></label><label>Tu correo o teléfono (para responderte)<input id="c" autocomplete="email" required></label><label>¿Qué necesitas?<textarea id="m" rows="5" required></textarea></label><input class="hp" id="w" tabindex="-1" autocomplete="off" aria-hidden="true"><div class="cta"><button class="btn" type="submit">Enviar mensaje</button></div><p class="hint" id="h" role="status"></p></form></div></section>
+</main>
+<script>
+document.getElementById("f").addEventListener("submit",async function(ev){ev.preventDefault();var h=document.getElementById("h"),g=function(i){return document.getElementById(i).value.trim()};
+if(!g("c")||!g("m")){h.textContent="Déjanos tu correo o teléfono y tu mensaje.";return}h.textContent="Enviando…";
+try{var r=await fetch("/api/enviar",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({nombre:g("n"),empresa:g("e"),contacto:g("c"),temas:"",mensaje:g("m"),web:document.getElementById("w").value})});var j=await r.json();
+if(j&&j.ok){h.textContent="¡Mensaje enviado! Te responderemos pronto.";document.getElementById("f").reset()}else throw 0}catch(e){h.innerHTML='No pudimos enviarlo. Escríbenos por <a href="https://wa.me/523350238434?text=Hola%20Meits%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios.">WhatsApp</a> o a hola@meits.com.mx.'}});
+</script>
+<footer>© 2026 Meits</footer>
+</body>
+</html>
